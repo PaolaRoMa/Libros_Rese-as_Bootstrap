@@ -3,6 +3,10 @@
     position: relative;
     overflow: hidden;
 }
+
+.btn-primary {
+    background-color: #04bef7;
+}
  
 .card-text {
     position: absolute;
@@ -54,7 +58,7 @@
 }
  /* Añade un margen superior a la lista de libros */
 .row {
-    margin-top: 500px; /* Ajusta el margen superior según tus necesidades */
+    margin-top: 350px; /* Ajusta el margen superior según tus necesidades */
 }
 
 body {
@@ -83,4 +87,14 @@ label {
 input[type="radio"]:checked ~ label {
     background-image: url('fullStar.png'); /* Imagen de estrella llena */
 }
-  
+
+/* Estilos para la navbar */
+.navbar {
+    
+    top: 300px; /* Ajusta según tu preferencia */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
