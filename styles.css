@@ -1,0 +1,86 @@
+/* styles.css */
+.card {
+    position: relative;
+    overflow: hidden;
+}
+ 
+.card-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+}
+ 
+.card:hover .card-text {
+    transform: translateY(0);
+}
+.custom-img-size {
+    width: 100%; /* Puedes ajustar el ancho según tus necesidades */
+    height: auto; /* Para mantener la proporción de aspecto original */
+}
+
+/* Estilos personalizados para el carrusel */
+#carouselExampleControls {
+    max-width: 1800px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 100 auto; /* Centra el carrusel horizontalmente */
+    position: absolute;
+    top: 0; /* Alinea el carrusel en la parte superior de la página */
+    left: 0; /* Asegura que el carrusel comience desde la esquina izquierda */
+    right: 0; /* Asegura que el carrusel termine en la esquina derecha */
+    max-height: 400px; /* Ajusta la altura máxima del carrusel según tus necesidades */
+    overflow: hidden; /* Oculta cualquier contenido que exceda la altura máxima */
+}
+ 
+
+.carousel-item img {
+    max-height: 100%; /* Ajusta la altura de las imágenes dentro de cada diapositiva */
+    width: auto;
+    margin: auto; /* Centra la imagen en la diapositiva */
+    /*transition: transform 0.5s ease;  Agrega una transición suave al efecto de zoom-out */
+}
+
+.carousel-caption h1 {
+    position: absolute;
+    top: -3000%; /* Ajusta la posición vertical según tus necesidades */
+    left: 50%;
+    transform: translateX(-50%); /* Centra horizontalmente el texto en relación al contenedor */
+    color: #000000; /* Ajusta el color del texto según tus preferencias */
+    background-color: rgba(252, 251, 251, 0.457);
+}
+ /* Añade un margen superior a la lista de libros */
+.row {
+    margin-top: 500px; /* Ajusta el margen superior según tus necesidades */
+}
+
+body {
+    margin: 150px; /* Agrega márgenes según tus preferencias */
+}
+
+/* CSS */
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+  
+input[type="radio"] {
+    display: none;
+}
+  
+label {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background-image: url('emptyStar.png'); /* Imagen de estrella vacía */
+    background-size: cover;
+}
+  
+input[type="radio"]:checked ~ label {
+    background-image: url('fullStar.png'); /* Imagen de estrella llena */
+}
+  
