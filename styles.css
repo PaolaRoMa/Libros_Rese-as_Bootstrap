@@ -45,7 +45,6 @@
     max-height: 100%; /* Ajusta la altura de las imágenes dentro de cada diapositiva */
     width: auto;
     margin: auto; /* Centra la imagen en la diapositiva */
-    /*transition: transform 0.5s ease;  Agrega una transición suave al efecto de zoom-out */
 }
 
 .carousel-caption h1 {
@@ -58,11 +57,11 @@
 }
  /* Añade un margen superior a la lista de libros */
 .row {
-    margin-top: 350px; /* Ajusta el margen superior según tus necesidades */
+    margin-top: 350px; /* Ajusta el margen superior */
 }
 
 body {
-    margin: 150px; /* Agrega márgenes según tus preferencias */
+    margin: 150px; /* Agrega márgenes */
 }
 
 /* CSS */
@@ -96,17 +95,10 @@ input[type="radio"]:checked ~ label {
     width: 100%;
     z-index: 1000;
 }
-.rating {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 .rating-header {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    
 }
 
-.rating-stars {
-    display: flex;
-    justify-content: center;
-}
