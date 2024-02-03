@@ -1,4 +1,4 @@
-<!-- Contenido de pagina_libro1.html -->
+<!-- Contenido de pagina_paginas/libro1.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,15 +15,15 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carouseSl-inner">
             <div class="carousel-item active">
-                <img src="img1.jpg" class="d-block w-100" alt="...">
+                <img src="imagenes/img1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                <h1>Reseña tus libros</h1>
+                <h1>Reseñas de libros</h1>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img2.jpg" class="d-block w-100" alt="...">
+                <img src="imagenes/img2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                <h1>Agrega tu calificacion</h1>
+                <h1>Puntuacion de los libros</h1>
                 </div>
             </div>
             <div class="carousel-item">
@@ -39,7 +39,7 @@
         </a>
         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
+            <span class="sr-only">Next</span>
         </a>
     </div>
 
@@ -59,29 +59,28 @@
                    Libros
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                   <a class="dropdown-item" href="libro1.html">Juego de tronos</a>
-                   <a class="dropdown-item" href="libro2.html">La brujula dorada</a>
-                   <a class="dropdown-item" href="libro3.html">Harry Potter</a>
-                   <a class="dropdown-item" href="libro4.html">El señor de los anillos</a>
-                   <a class="dropdown-item" href="libro5.html">Jane Eyre</a>
-                   <a class="dropdown-item" href="libro6.html">La ultima pregunta</a>
+                   <a class="dropdown-item" href="paginas/libro1.html">Juego de tronos</a>
+                   <a class="dropdown-item" href="paginas/libro2.html">La brujula dorada</a>
+                   <a class="dropdown-item" href="paginas/libro3.html">Harry Potter</a>
+                   <a class="dropdown-item" href="paginas/libro4.html">El señor de los anillos</a>
+                   <a class="dropdown-item" href="paginas/libro5.html">Jane Eyre</a>
+                   <a class="dropdown-item" href="paginas/libro6.html">La ultima pregunta</a>
                 </div>
              </li>
-              <!-- Agrega más elementos de menú según sea necesario -->
            </ul>
         </div>
     </nav>
 
-    <!-- Contenido de la página del Libro 4 -->
+    <!-- Contenido de la página del Libro 6 -->
     <div class="container">
         <div class="row">
             <!-- Columna para la tarjeta del libro -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card">
-                        <img src="LOTR.jpg" class="card-img-top custom-img-size" alt="Libro 1">
+                        <img src="imagenes/LUP.jpg" class="card-img-top custom-img-size" alt="Libro 1">
                         <div class="card-body">
-                            <h5 class="card-title">El señor de los anillos el retorno del rey</h5>
-                            <p class="card-autor">J.R.R. Tolkien</p>
+                            <h5 class="card-title">La ultima pregunta</h5>
+                            <p class="card-autor">Isaac Asimov</p>
                         </div>
 
                 </div>
@@ -91,11 +90,34 @@
             <div class="col-lg-8 col-md-6 mb-4">
                 <div class="container">
                     <h2>Reseña</h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore facilis consequuntur incidunt culpa repellendus dolores itaque, at quisquam fugiat rem accusantium sapiente dolore corrupti perspiciatis laudantium tempora voluptatum dolorum iusto?
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam praesentium, deserunt non sequi commodi optio nisi sint magni, est doloremque dolorum eius voluptas dolor exercitationem possimus voluptates voluptate, odio fugit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam repellendus dolorem possimus architecto sed tenetur repellat laboriosam error id quod alias hic reiciendis harum, sint veniam explicabo! Nostrum modi sapiente sequi eveniet sint, error id illo alias officia, dolorem veniam consectetur sit temporibus, ex aliquid praesentium inventore. Aspernatur, provident maiores!
+                    <p>
+                        "La última pregunta" es un cuento de ciencia ficción escrito por Isaac Asimov que explora temas fundamentales como el avance tecnológico, la inteligencia 
+                        artificial y la existencia misma. La narrativa se extiende a lo largo de milenios, siguiendo la evolución de la humanidad y su relación con una supercomputadora 
+                        llamada Multivac. A medida que las civilizaciones surgen y desaparecen, la humanidad busca la respuesta a la última pregunta: cómo revertir la entropía del universo. 
+                        A través de giros temporales y cambios cósmicos, Asimov teje una historia fascinante que culmina en un sorprendente clímax. "La última pregunta" es un 
+                        relato reflexivo que desafía las percepciones del tiempo y la realidad, dejando a los lectores con una ponderación profunda sobre el destino de la humanidad en el universo. 
+                    </p>
+                    
                 </div>
-            </div>
+            
+                <div class="rating" data-book-id="2">
+                    <div class="rating-header">
+                        <h4>Calificación:</h4>
+                    </div>
+                    <div class="rating-stars">
+                        <input type="radio" id="star5_book6" name="rating_book6" value="5">
+                            <label for="star5_book6"></label>
+                            <input type="radio" id="star4_book6" name="rating_book6" value="4">
+                            <label for="star4_book6"></label>
+                            <input type="radio" id="star3_book6" name="rating_book6" value="3">
+                            <label for="star3_book6"></label>
+                            <input type="radio" id="star2_book6" name="rating_book6" value="2">
+                            <label for="star2_book6"></label>
+                            <input type="radio" id="star1_book6" name="rating_book6" value="1">
+                            <label for="star1_book6"></label>
+                    </div>
+                </div>
+            </div>     
         </div>
     </div>
     

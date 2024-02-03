@@ -1,4 +1,4 @@
-<!-- Contenido de pagina_libro1.html -->
+<!-- Contenido de pagina_paginas/libro1.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,19 +15,19 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carouseSl-inner">
             <div class="carousel-item active">
-                <img src="img1.jpg" class="d-block w-100" alt="...">
+                <img src="imagenes/img1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                <h1>Reseña tus libros</h1>
+                <h1>Reseñas de libros</h1>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img2.jpg" class="d-block w-100" alt="...">
+                <img src="imagenes/img2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                <h1>Agrega tu calificacion</h1>
+                <h1>Puntuacion de los libros</h1>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img3.jpg" class="d-block w-100" alt="...">
+                <img src="imagenes/img3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                 <h1>Comparte tu opinion</h1>
                 </div>
@@ -59,12 +59,12 @@
                    Libros
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                   <a class="dropdown-item" href="libro1.html">Juego de tronos</a>
-                   <a class="dropdown-item" href="libro2.html">La brujula dorada</a>
-                   <a class="dropdown-item" href="libro3.html">Harry Potter</a>
-                   <a class="dropdown-item" href="libro4.html">El señor de los anillos</a>
-                   <a class="dropdown-item" href="libro5.html">Jane Eyre</a>
-                   <a class="dropdown-item" href="libro6.html">La ultima pregunta</a>
+                   <a class="dropdown-item" href="paginas/libro1.html">Juego de tronos</a>
+                   <a class="dropdown-item" href="paginas/libro2.html">La brujula dorada</a>
+                   <a class="dropdown-item" href="paginas/libro3.html">Harry Potter</a>
+                   <a class="dropdown-item" href="paginas/libro4.html">El señor de los anillos</a>
+                   <a class="dropdown-item" href="paginas/libro5.html">Jane Eyre</a>
+                   <a class="dropdown-item" href="paginas/libro6.html">La ultima pregunta</a>
                 </div>
              </li>
               
@@ -78,7 +78,7 @@
             <!-- Columna para la tarjeta del libro -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card">
-                        <img src="HDM.jpg" class="card-img-top custom-img-size" alt="Libro 1">
+                        <img src="imagenes/HDM.jpg" class="card-img-top custom-img-size" alt="Libro 1">
                         <div class="card-body">
                             <h5 class="card-title">La brujula dorada</h5>
                             <p class="card-autor">Phillip Pullman</p>
@@ -91,11 +91,36 @@
             <div class="col-lg-8 col-md-6 mb-4">
                 <div class="container">
                     <h2>Reseña</h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore facilis consequuntur incidunt culpa repellendus dolores itaque, at quisquam fugiat rem accusantium sapiente dolore corrupti perspiciatis laudantium tempora voluptatum dolorum iusto?
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam praesentium, deserunt non sequi commodi optio nisi sint magni, est doloremque dolorum eius voluptas dolor exercitationem possimus voluptates voluptate, odio fugit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam repellendus dolorem possimus architecto sed tenetur repellat laboriosam error id quod alias hic reiciendis harum, sint veniam explicabo! Nostrum modi sapiente sequi eveniet sint, error id illo alias officia, dolorem veniam consectetur sit temporibus, ex aliquid praesentium inventore. Aspernatur, provident maiores!
+                    <p>
+                    "La Brújula Dorada" de Philip Pullman es una joya literaria que transporta a los lectores a un mundo de maravillas y misterios. 
+                    La historia sigue a la valiente Lyra Belacqua en un viaje épico a través de dimensiones paralelas, lleno de aventuras, intrigas y descubrimientos trascendentales. 
+                    Ambientada en un universo donde cada persona tiene su propio daimonion, una manifestación externa de su alma, la novela explora temas profundos como la libertad, 
+                    la autoridad y el poder. Pullman crea un mundo exquisitamente detallado, poblado por personajes entrañables y criaturas fantásticas. A medida que Lyra se enfrenta a fuerzas oscuras y conspiraciones, su valentía y astucia cautivan a los lectores, 
+                    convirtiéndola en una heroína inolvidable. La prosa de Pullman es rica en imaginación y profundidad, capturando la atención con su estilo evocador y poético. Con una trama intrincada que fusiona ciencia, magia y filosofía, 
+                    "La Brújula Dorada" no solo es una obra maestra del género fantástico, sino también una reflexión provocadora sobre la naturaleza humana y el poder.
+                    Esta novela, el primer libro de la trilogía "Materia Oscura", deja una impresión duradera, desafiando las expectativas y resonando con lectores de todas las edades.    
+                    </p>
                 </div>
-            </div>
+            
+
+                <div class="rating" data-book-id="2">
+                    <div class="rating-header">
+                        <h4>Calificación:</h4>
+                    </div>
+                    <div class="rating-stars">
+                        <input type="radio" id="star5_book2" name="rating_book2" value="5">
+                            <label for="star5_book2"></label>
+                            <input type="radio" id="star4_book2" name="rating_book2" value="4">
+                            <label for="star4_book2"></label>
+                            <input type="radio" id="star3_book2" name="rating_book2" value="3">
+                            <label for="star3_book2"></label>
+                            <input type="radio" id="star2_book2" name="rating_book2" value="2">
+                            <label for="star2_book2"></label>
+                            <input type="radio" id="star1_book2" name="rating_book2" value="1">
+                            <label for="star1_book2"></label>
+                    </div>
+                </div>
+            </div>    
         </div>
     </div>
     

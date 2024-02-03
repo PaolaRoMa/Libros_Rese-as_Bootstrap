@@ -80,12 +80,12 @@ label {
     cursor: pointer;
     width: 25px;
     height: 25px;
-    background-image: url('emptyStar.png'); /* Imagen de estrella vacía */
+    background-image: url('imagenes/emptyStar.png'); /* Imagen de estrella vacía */
     background-size: cover;
 }
   
 input[type="radio"]:checked ~ label {
-    background-image: url('fullStar.png'); /* Imagen de estrella llena */
+    background-image: url('imagenes/fullStar.png'); /* Imagen de estrella llena */
 }
 
 /* Estilos para la navbar */
@@ -96,5 +96,17 @@ input[type="radio"]:checked ~ label {
     width: 100%;
     z-index: 1000;
 }
+.rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.rating-header {
+    margin-bottom: 10px;
+}
 
+.rating-stars {
+    display: flex;
+    justify-content: center;
+}
